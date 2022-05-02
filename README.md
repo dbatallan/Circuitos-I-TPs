@@ -10,4 +10,5 @@
 ## Informe
 
 [Trabajo Práctico 1](https://www.overleaf.com/9957141683spqckjzvndwn)
-[Trabajo Práctico 2] Coming soon 
+
+Trabajo Práctico 2
