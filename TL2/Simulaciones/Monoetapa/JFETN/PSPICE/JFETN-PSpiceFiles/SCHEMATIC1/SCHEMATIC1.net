@@ -1,0 +1,13 @@
+* source JFETN
+R_RG1         N00175 N00499  820k TC=0,0 
+R_RG2         0 N00175  100k TC=0,0 
+J_J1         N00189 N00175 N00193 2N5486/PLP
+R_RD         N00189 N00499  1k TC=0,0 
+R_RS         0 N00193  470 TC=0,0 
+R_RL         0 VO  10k TC=0,0 
+C_C1         N00189 VO  2u  TC=0,0 
+C_C2         N00439 N00175  2u  TC=0,0 
+R_Rgen         N00439 N00642  50 TC=0,0 
+V_VDD         N00499 0 18
+C_CS         0 N00193  100u  TC=0,0 
+V_V1         N00642 0 DC 0Vdc AC 1Vac 

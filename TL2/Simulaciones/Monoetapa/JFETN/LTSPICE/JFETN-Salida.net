@@ -1,0 +1,22 @@
+* C:\Users\Lionheart\Documents\GitHub\Circuitos-I-TPs\TL2\Simulaciones\Monoetapa\JFETN\JFETN-Salida.asc
+V1 vg 0 0
+V2 vd 0 5
+J1 vd vg 0 jfetN
+.model NJF NJF
+.model PJF PJF
+.lib C:\Users\Lionheart\Documents\LTspiceXVII\lib\cmp\standard.jft
+* Observar las diferencias de la \nsimulación propuesta, al variar \nel valor de lambda y/o VDS
+;dc V1 -3 0 .01
+* 1ra simulación
+* 2da simulación
+.dc V2 0 18 .01 V1 list -1.220542
+.print Id(j1)
+* El modelo del JFET se define como sigue:\n(1) Vto es el VP del transistor\n(2) BETA es IDSS/VP^2. ie: si IDSS=10mA, VP=2V =>\n     BETA = 10m/4V^2 = 2.5m\n(3) CGS es Cgs0  (el modelo tiene en cuenta la tensión \nVGS en inversa, para calcular la capacidad Cgs \nen el punto de trabajo)\n(4) CGD es Cgd0 (el modelo tiene en cuenta la tensión \nVGD en inversa, para calcular la capacidad Cgd \nen el punto de trabajo)\n(5) LAMBDA es Lambda
+.model jfetN njf(
++VTO=-4
++BETA=0.875m
++LAMBDA=0
++CGS=28E-12
++CGD=3E-12)
+.backanno
+.end

@@ -1,0 +1,129 @@
+
+**** 05/22/22 19:03:10 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-ACanalysis"  [ C:\Users\Lionheart\Documents\GitHub\Circuitos-I-TPs\TL2\Simulaciones\Monoetapa\JFETN\PSPICE\J
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "ACanalysis.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.AC DEC 30 1 100Meg
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source JFETN
+R_RG1         N00175 N00499  820k TC=0,0 
+R_RG2         0 N00175  100k TC=0,0 
+J_J1         N00189 N00175 N00193 2N5486/PLP
+R_RD         N00189 N00499  1k TC=0,0 
+R_RS         0 N00193  470 TC=0,0 
+R_RL         0 VO  10k TC=0,0 
+C_C1         N00189 VO  2u  TC=0,0 
+C_C2         N00439 N00175  2u  TC=0,0 
+R_Rgen         N00439 N00642  50 TC=0,0 
+V_VDD         N00499 0 18
+C_CS         0 N00193  100u  TC=0,0 
+V_V1         N00642 0 DC 0Vdc AC 1Vac 
+
+**** RESUMING ACanalysis.cir ****
+.END
+
+INFO(ORPSIM-15423): Unable to find index file nomd.ind for library file nomd.lib.
+
+INFO(ORPSIM-15422): Making new index file nomd.ind for library file nomd.lib.
+
+Index has 34104 entries from 205 file(s).
+
+**** 05/22/22 19:03:10 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-ACanalysis"  [ C:\Users\Lionheart\Documents\GitHub\Circuitos-I-TPs\TL2\Simulaciones\Monoetapa\JFETN\PSPICE\J
+
+
+ ****     Junction FET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               2N5486/PLP      
+               NJF             
+         VTO   -3.847        
+        BETA  832.666000E-06 
+      LAMBDA     .019151     
+          IS  203.601000E-18 
+          RD    5.71667      
+          RS    5.71667      
+         CGD    2.380000E-12 
+         CGS    2.500000E-12 
+          PB    1.48032      
+
+
+**** 05/22/22 19:03:10 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-ACanalysis"  [ C:\Users\Lionheart\Documents\GitHub\Circuitos-I-TPs\TL2\Simulaciones\Monoetapa\JFETN\PSPICE\J
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   VO)    0.0000  (N00175)    1.9565 (N00189)   11.3340 (N00193)    3.1333     
+
+(N00439)    0.0000 (N00499)   18.0000 (N00642)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_VDD       -6.686E-03
+    V_V1         0.000E+00
+
+    TOTAL POWER DISSIPATION   1.20E-01  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 05/22/22 19:03:10 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-ACanalysis"  [ C:\Users\Lionheart\Documents\GitHub\Circuitos-I-TPs\TL2\Simulaciones\Monoetapa\JFETN\PSPICE\J
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =        1.45
+

@@ -1,0 +1,15 @@
+Record Length,700
+Sample Interval,0.002000
+Trig Position,20486
+Data Interval,0.020000
+Vertical Units,V
+Vertical Scale,CH1:2.000000
+Vertival Offset,CH1:-0.080000
+Horizontal Units,ms
+Horizontal Scale,1.000000
+Horizontal Position,0.000000
+Model Number,GA1102CAL
+Serial Number,110000N1801140674
+Software Version,2.09
+Source,CH1
+No.,Volt
