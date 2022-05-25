@@ -1,0 +1,54 @@
+* C:\Users\Lionheart\Documents\GitHub\Circuitos-I-TPs\TL2\Simulaciones\Oscilador\NPN.asc
+Q1 VC_VO vb ve 0 BC548B
+RE ve 0 1k
+RC VCC VC_VO 4.7k
+RB2 vb 0 10k
+RB1 VCC vb 82k
+VCC VCC 0 20
+CE ve 0 100µ
+C1 vb N002 10n
+C2 N002 N001 10n
+C3 N001 VC_VO 10n
+R1 N002 0 10k
+R2 N001 0 10k
+.model NPN NPN
+.model PNP PNP
+.lib C:\Users\Lionheart\Documents\LTspiceXVII\lib\cmp\standard.bjt
+.model BC548B NPN
++Is=7.049f
++Rb=150
++Xti=3
++Eg=1.11
++Vaf=62.79
++Bf=290
++Ise=68f
++Ne=1.576
++Ikf=81.57m
++Nk=.4767
++Xtb=1.5
++Br=1
++Isc=12.4f
++Nc=1.835
++Ikr=3.924
++Rc=.9747
++Cjc=5.25p
++Mjc=.3147
++Vjc=.5697
++Fc=.5
++Cje=11.5p
++Mje=.6715
++Vje=.5
++Tr=10n
++Tf=410.2p
++Itf=1.491
++Xtf=40.06
++Vtf=10
+*                               PHILIPS                         pid=bc546b      case=TO92
+*                               91-07-31 dsq
+* El modelo del mos se define como sigue:\n(1) BF es el beta o hFE\n(2) IS es el IS de la expresión IC = IS * exp(VBE/VT)\n(3) VAF es la tensión de Early
+* IMPORTANTE:\nPara simular los TPs, usar el modelo del \ntransistor BC548B de la pagina del lace:\nhttp://laceserver.fi.uba.ar/
+.tran 0 280m 200m 80u uic
+;ac dec 30 1 1000000
+.op
+.backanno
+.end
