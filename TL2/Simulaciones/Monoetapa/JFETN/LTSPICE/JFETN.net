@@ -16,12 +16,12 @@ Rgen N001 N002 50
 .lib C:\Users\Lionheart\Documents\LTspiceXVII\lib\cmp\standard.jft
 * El modelo del JFET se define como sigue:\n(1) Vto es el VP del transistor\n(2) BETA es IDSS/VP^2. ie: si IDSS=10mA, VP=2V =>\n     BETA = 10m/4V^2 = 2.5m\n(3) CGS es Cgs0  (el modelo tiene en cuenta la tensión \nVGS en inversa, para calcular la capacidad Cgs \nen el punto de trabajo)\n(4) CGD es Cgd0 (el modelo tiene en cuenta la tensión \nVGD en inversa, para calcular la capacidad Cgd \nen el punto de trabajo)\n(5) LAMBDA es Lambda
 .model J2N5486  NJF
-+Beta=2m
++Beta=0.555555556m
 +Betatce=-0.875
 +Rd=1
 +Rs=1
 +Lambda=9.5m
-+Vto=-2
++Vto=-6
 +vtotc=-2.5m
 +Is=33.57f
 +Isr=322.4f
