@@ -1,0 +1,24 @@
+Circuit: * C:\Users\Lionheart\Documents\GitHub\Circuitos-I-TPs\Ejercicios\Parcial 2017-11-17\Draft1.asc
+
+WARNING: Less than two connections to node +10.  This node is used by VCC1.
+WARNING: Less than two connections to node N004.  This node is used by R3.
+WARNING: Less than two connections to node -15.  This node is used by V1.
+Direct Newton iteration for .op point succeeded.
+
+Date: Sat Jun 04 17:30:39 2022
+Total elapsed time: 0.054 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 2053
+traniter = 2050
+tranpoints = 1026
+accept = 1026
+rejected = 0
+matrix size = 10
+fillins = 0
+solver = Normal
+Matrix Compiler1: 202 bytes object code size  0.1/0.1/[0.0]
+Matrix Compiler2: 516 bytes object code size  0.0/0.1/[0.0]
+

@@ -1,0 +1,80 @@
+* C:\Users\Lionheart\Documents\GitHub\Circuitos-I-TPs\Ejercicios\Parcial 2017-11-17\Ri.asc
+Q1 VCQ_VOQ VSQ_VBQ VEQ 0 BC548B
+RG1 VGQ 0 354545
+RG2 VEE VGQ 100k
+VCC VDQ 0 10
+Cs VGQ vgen 1µ
+vs vgen 0 SINE(0 5m 500) AC 1
+J1 VDQ VGQ VSQ_VBQ J2N5486
+VCC1 0 VEE 10
+RC VDQ VCQ_VOQ 1K
+RE VEQ VEE 300
+RL VCQ_VOQ 0 5K
+CE VEQ 0 100µ
+.model NPN NPN
+.model PNP PNP
+.lib C:\Users\Lionheart\Documents\LTspiceXVII\lib\cmp\standard.bjt
+.model NJF NJF
+.model PJF PJF
+.lib C:\Users\Lionheart\Documents\LTspiceXVII\lib\cmp\standard.jft
+.model BC548B NPN
++Is=7.049f
++Rb=100
++Xti=3
++Eg=1.11
++Vaf=100
++Bf=100
++Ise=68f
++Ne=1.576
++Ikf=81.57m
++Nk=.4767
++Xtb=1.5
++Br=1
++Isc=12.4f
++Nc=1.835
++Ikr=3.924
++Rc=.9747
++Cjc=5.25p
++Mjc=.3147
++Vjc=.5697
++Fc=.5
++Cje=11.5p
++Mje=.6715
++Vje=.63
++Tr=10n
++Tf=410.2p
++Itf=1.491
++Xtf=40.06
++Vtf=10
+;tran 0 18m 10m 8u
+.ac dec 30 1 1000000
+.op
+.model J2N5486  NJF
++Beta=3.55555555556m
++Betatce=-0.875
++Rd=1
++Rs=1
++Lambda=0.01
++Vto=-1.5
++vtotc=-2.5m
++Is=33.57f
++Isr=322.4f
++N=1
++Nr=2
++Xti=3
++Alpha=311.7u
++Vk=243.6
++Cgd=1.6p
++M=.3622
++Pb=1
++Fc=.5
++Cgs=2.414p
++Kf=5.497E-18
++Af=1
+* VP=-1.5\nIDSS=8mA\nrgs---->Inf\nLambda=0.01v^-1
+* B=100\nVA=100V\nrx=100
+* VOQ=0
+* Ro
+* Ri
+.backanno
+.end

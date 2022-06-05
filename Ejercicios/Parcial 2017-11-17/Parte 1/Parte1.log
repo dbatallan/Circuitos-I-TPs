@@ -1,0 +1,25 @@
+Circuit: * C:\Users\Lionheart\Documents\GitHub\Circuitos-I-TPs\Ejercicios\Parcial 2017-11-17\Parte 1\Parte1.asc
+
+Warning: Multiple definitions of model "2scr375p" Type: BJT
+Warning: Multiple definitions of model "bc857b" Type: BJT
+Warning: Multiple definitions of model "bc847c" Type: BJT
+Warning: Multiple definitions of model "bc847b" Type: BJT
+Direct Newton iteration for .op point succeeded.
+
+Date: Sat Jun 04 20:41:42 2022
+Total elapsed time: 0.020 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 4316
+traniter = 4310
+tranpoints = 2032
+accept = 2029
+rejected = 3
+matrix size = 8
+fillins = 0
+solver = Normal
+Matrix Compiler1: 380 bytes object code size  0.1/0.0/[0.0]
+Matrix Compiler2: off  [0.0]/0.1/0.0
+

@@ -1,0 +1,57 @@
+Circuit: * C:\Users\Lionheart\Documents\GitHub\Circuitos-I-TPs\Ejercicios\Parcial 2017-11-17\Ri.asc
+
+Warning: Multiple definitions of model "2scr375p" Type: BJT
+Warning: Multiple definitions of model "bc857b" Type: BJT
+Warning: Multiple definitions of model "bc847c" Type: BJT
+Warning: Multiple definitions of model "bc847b" Type: BJT
+Direct Newton iteration for .op point succeeded.
+Semiconductor Device Operating Points:
+                        --- Bipolar Transistors ---
+Name:       q1
+Model:    bc548b
+Ib:       9.88e-05
+Ic:       9.28e-03
+Vbe:      7.32e-01
+Vbc:     -7.06e+00
+Vce:      7.79e+00
+BetaDC:   9.40e+01
+Gm:       3.29e-01
+Rpi:      2.65e+02
+Rx:       1.00e+02
+Ro:       1.15e+04
+Cbe:      1.70e-10
+Cbc:      2.32e-12
+Cjs:      0.00e+00
+BetaAC:   8.72e+01
+Cbx:      0.00e+00
+Ft:       3.04e+08
+
+                        --- JFET Transistors ---
+Name:      j1
+Model:   j2n5486
+Id:      9.88e-05
+Vgs:    -1.35e+00
+Vds:     1.65e+01
+Gm:      1.28e-03
+Gds:     8.48e-07
+Cgs:     1.77e-12
+Cgd:     5.53e-13
+
+
+
+Date: Sat Jun 04 19:26:14 2022
+Total elapsed time: 0.031 seconds.
+
+tnom = 27
+temp = 27
+method = trap
+totiter = 16
+traniter = 0
+tranpoints = 0
+accept = 0
+rejected = 0
+matrix size = 14
+fillins = 0
+solver = Normal
+Matrix Compiler1:      44 opcodes
+Matrix Compiler2: 1.09 KB object code size
